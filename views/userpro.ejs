@@ -1,0 +1,26 @@
+<%- include("./partials/header") %> 
+<div class="container mt-3">
+    <div class="row">
+        <div class="col-md-6">
+            <div style="padding: 0; width: 100%;">
+                <img style="width: 100%;  border-radius: 50%;" src="<%= user.avatar %>" alt="User avatar Image">
+                <p class="text-center"><%= user.firstname%> <%= user.lastname %> </p>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div>
+                <%= user.about %>
+                <p><a href="http://www.gmail.com"><%= user.email %> </a></p> 
+            </div>
+            <div>
+                <h2><%= user.username %>'s Campgrounds </h2>
+                <ul>
+                    <% camp.forEach(function(a) {%> 
+                    <li style="font-size: 2rem;"><a href="/capground/<%= a._id %>"><%= a.tittle %> </a></li>
+                    <% }); %> 
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<%- include("./partials/footer") %> 

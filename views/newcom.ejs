@@ -1,0 +1,18 @@
+<%- include("partials/header") %> 
+<div class="container-fluid mt-3">
+        <h1 class="text-center">Add New Comment To <%= a.tittle %> </h1>
+    <div class="container mt-3">
+        <div style="max-width: 400px; margin: auto;">
+            <form style="display: flex; flex-direction: column;" action="/capground/<%= a._id %>/comment " method="POST">
+                <input class="mt-0 form-control" type="text" name="comment[title]" placeholder="Title of the comment">
+                <!-- <input type="text" class="form-control" name="comment[author]" placeholder="Author"> -->
+                <button class="btn btn-primary btn-lg" style="margin-top: 10px;">Submit!</button>
+            </form>
+            <div>
+                <a class="btn btn-sm btn-success" style="margin-top: 10px;" href="/">Go Back</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer") %> 

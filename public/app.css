@@ -1,0 +1,19 @@
+/* input{
+    margin-top: 12px;
+    padding: 4px;
+    padding-left: 8px;
+} */
+ /* p form button{
+    margin-top: 12px;
+} */
+
+.pull-right{
+    float: right;
+}
+
+.well {
+    background-color: #efecec;
+    padding: 12px;
+    border-radius: 5px;
+    margin-top: 30px;
+}
